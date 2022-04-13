@@ -17,13 +17,13 @@ VALUES
 CREATE TABLE SpotifyClone.users (
   user_id int AUTO_INCREMENT PRIMARY KEY,
   full_name varchar(255) NOT NULL,
-  age int NOT NULL
+  age int NOT NULL,
   plan_id int NOT NULL,
   signature_date datetime NOT NULL,
   FOREIGN KEY (plan_id) REFERENCES plans (plan_id)
 );
 
-INSERT TO SpotifyClone.users (full_name, age, plan_id, signature_date)
+INSERT INTO SpotifyClone.users (full_name, age, plan_id, signature_date)
 VALUES
   ('Thati', 23, 1, '2019-10-20'),
   ('Cintia', 35, 2, '2017-12-30'),
