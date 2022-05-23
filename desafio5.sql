@@ -1,5 +1,5 @@
 SELECT 
-  so.song_name AS cancoes,
+  so.song_name AS cancao,
   COUNT(hi.song_id) AS reproducoes
 FROM
   SpotifyClone.history AS hi
