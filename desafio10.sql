@@ -8,5 +8,5 @@ FROM
     JOIN
   SpotifyClone.songs AS so ON so.song_id = hi.song_id
 WHERE
-  us.plan_id = 1 || 3
+  us.plan_id = 1 OR us.plan_id = 3
 GROUP BY so.song_id;
